@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab01_120151294_AlaaAlshaer</title>
+    </head>
+    <body>
+    <header>
+        <marquee  style = "color:red ;background-color:blue; height: 50px;font-size:30px"><b>hi, Welcome in My html page </b></marquee>
+        <div>
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+    </header>
+    <br>
+    <hr>
+    <aside>
+        <p>name: <b>Alaa J. S. Alshaer</b></p>
+        <p>age: <b><u>22</u></b></p>
+        <address>address: <b>Gaza Strip-Rafah</b></address>
+        <p>favourite: <b>football - swimming - running </b></p>
+    </aside>
+    <section >
+      <article >
+          <figure >
+            <h2>figure</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvUaKkcjeldwTqyFccow2aN2rhM8NmXLRipw&usqp=CAU">
+            <figcaption>
+              <a target="_blank" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvUaKkcjeldwTqyFccow2aN2rhM8NmXLRipw&usqp=CAU">
+                <b>this is the sea</b>
+            </a>
+            </figcaption>
+          </figure>
+          <input type="text"  list="mySearch" >
+          <datalist id="mySearch">
+            <option value="Alaa" selected></option>
+            <option value="Ali"></option>
+            <option value="mohammed"></option>
+            <option value="sara"></option>
+          </datalist>
+      </article>
+      <article>
+        <h2>audio</h2>
+        <audio controls>
+          <source src="http://flash.webestools.com/mp3_player/free_software_song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <h2>video</h2>
+        <video width="720" height="405" controls  poster="http://www.webestools.com/page/media/videoTag/BigBuckBunny.png">
+          <source src="http://www.webestools.com/page/media/videoTag/BigBuckBunny.webm" type="video/webm">
+          Your browser does not support the video tag or the file format of this video.
+        </video>
+        <br>
+        <h2>video youtube</h2>
+        <iframe width="420" height="345"src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1&loop=0&controls=1"></iframe>
+      </article>
+      <article>
+        <h2>list</h2>
+        <ol>
+          <h3>ordered list</h3>
+          <li>list item</li>
+          <li>Ali</li>
+          <li>Ahmed</li>
+        </ol>
+      
+        <ul>
+          <h3>unordered list</h3>
+          <li>list item</li>
+          <li>Ali</li>
+          <li>Ahmed</li>
+          <li>Alaa</li>
+        </ul>
+      
+        <dl>
+          <h3>description list</h3>
+          <dl>name</dl>
+          <dd>I am Alaa</dd>
+          <dl>age</dl>
+          <dd>22</dd>
+        </dl>
+      </article>
+      <article>
+        <h2>form</h2>
+        <form action="\register.html" method="post" target="_parent" autocomplete="on" >
+          <label for="fname">First Name: </label>
+          <input type="text" name="fname" value="first name" />
+          <br>
+
+          <label for="lname">Last Name: </label>
+          <input type="text" name="lname" value="last name"/>
+          <br>
+
+          <label for="age">Age: </label>
+          <input type="number" name="age" value="0"/>
+          <br>
+
+          <label for="password">Password: </label>
+          <input type="password" name="password" />
+          <br>
+
+          <label for="gender">Gender: </label>
+          <input type="radio" name="gender"/>male
+          <input type="radio" name="gender"/>female
+          <br>
+
+          <label for="cities">Cities: </label>
+          <input type="checkbox" name="cities" >Ramallah
+          <input type="checkbox" name="cities">Gaza
+          <input type="checkbox" name="cities">Rafah
+          <br>
+
+          <label for="color">Color: </label>
+          <input type="color" name="color">
+          <br>
+
+          <label for="email">Email: </label>
+          <input type="email" name="email" value="example@iug.ps">
+          <br>
+
+          <input type="submit" name="submit" value="submit">
+          <br>
+
+          <label for="Cars">choice the Car: </label>
+          <select id="cars" name="cars"  >
+           <option value="volvo">Volvo</option>
+           <option value="saab">Saab</option>
+           <option value="fiat">Fiat</option>
+           <option value="audi">Audi</option>
+          </select>
+          <br>
+          <br>
+          <label for="message"><b>message</b></label><br>
+          <textarea name="message" rows="8" cols="80"></textarea>
+          <br>
+          <button type="button" onclick="alert('Hello World!')">send message</button>
+      
+        </form>
+      
+      </article>
+      <article>
+        <h2>Table</h2>
+        <table >
+          <style>
+            th,td{
+              border: 1px solid black;
+            }
+          </style>
+          <caption><h3>employee info</h3></caption>
+          <tr><th>first name</th><th>last name</th><th>age</th><th>salary</th></tr>
+          <tr><td>Alaa</td><td>Alshaer</td><td>23</td><td>100$</td></tr>
+          <tr><td>Ali</td><td>Alshaer</td><td>23</td><td>1000$</td></tr>
+          <tr><td>Ahmed</td><td>Alshaer</td><td>23</td><td>10000$</td></tr>
+        </table>
+      </article>
+      <article>
+        <h2>Canvas</h2>
+        <canvas  width="300" height="150" style="border:2px solid brown; background-color: blueviolet;">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+      </article>
+    </section>
+
+    <br>
+    <footer>
+      <details>
+        <summary><b>Copy right alaa alshaer</b></summary>
+          <p>alshaer holds a doctorate in comparative religion from England's
+            University of Manchester, where his dissertation was a comparative study on 
+            role of women in Islam and Judaism. He later worked as a research scholar on 
+            Religion & Democracy at New York University, focusing on US history (1998).
+            In 2001 he was appointed Dean of Islamic Law (Shari'a)
+            at An-Najah National University, Nablus. He has published 
+            several books and papers on gender, globalization, the peace process,
+            preaching and human rights within religious higher education.<br>
+            In March 2006 he was appointed Education Minister and Deputy Prime
+            Minister of the Palestinian National Authority.
+          </p>
+      </details>
+    </footer>
+
+  </body>
+</html>
